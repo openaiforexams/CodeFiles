@@ -1,0 +1,322 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+:global {
+
+  #workbenchPageContent,
+  .CanvasComponent.LCS .CanvasZone {
+    max-width: 100% !important;
+  }
+
+}
+
+.gridContainer {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 74%);
+
+  .topbanner>div {
+    align-self: center;
+  }
+
+  .boxShadow {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 74%);
+  }
+
+  .rowPad {
+    padding: 0px 10px;
+  }
+
+  .alignRight {
+    text-align: right;
+  }
+
+  .alignLeft {
+    text-align: left;
+  }
+
+  .topbanner {
+    background: #041e50;
+    color: #fff;
+    margin: 0px !important;
+  }
+
+  .button {
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    // background: "[theme: themeDark, default: #005a9e]";
+    background: none;
+    border: 1px solid #041e50;
+    color: #041e50;
+  }
+
+  .inputFile {
+    color: "[theme:themePrimary , default: #0078d7]";
+    background: "[theme: neutralLight, default: #005a9e]";
+    padding: 4px !important;
+    margin: 0px !important;
+  }
+
+  .CollapsibleCustom>span {
+    color: "[theme:themePrimary , default: #0078d7]";
+    background: "[theme: neutralLight, default: #005a9e]";
+    padding: 10px 10px;
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .CollapsibleCustom i {
+    float: right;
+  }
+
+  .attachment span {
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 80%;
+    min-width: 80%;
+    vertical-align: middle;
+    overflow: hidden;
+  }
+
+  .attachment a {
+    display: inline-block;
+    padding: 0px 5px;
+    vertical-align: middle;
+  }
+
+  .attachment i {
+    font-size: 15px;
+  }
+
+  .titleRow {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .loaderDiv {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    top: 0;
+  }
+
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .loaderDiv {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(255 255 255 / 90%);
+    z-index: 1;
+    margin-left: -20px;
+    padding-top: 15%;
+  }
+
+  .loader {
+    position: relative;
+    top: 50px;
+    left: calc(50% - 4em);
+    width: 6em;
+    height: 6em;
+    border: 1.1em solid;
+    border-color: #041e50;
+    border-left-color: #041e50;
+    border-left: 1.1em solid;
+    border-radius: 50%;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+    transition: opacity 0.3s;
+  }
+
+  .loaderText {
+    position: relative;
+    text-align: center;
+    top: 75px;
+    color: #03787c;
+    font-weight: 300;
+    font-size: 20px;
+    margin-right: 30px;
+  }
+
+  .sectionLeft {
+    background: #041e50;
+    color: #fff;
+    padding: 25px 20px;
+  }
+
+  .sectionRight {
+    background: #fff;
+  }
+
+  .leftSecCol {
+    padding-bottom: 5px;
+  }
+
+  .labelHeader {
+    line-height: 1;
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #c4c4cd;
+  }
+
+  .labelContent {
+    line-height: 1;
+    font-size: 20px;
+  }
+
+  .labelText {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 5px 0px;
+  }
+
+  .sectionDocumentThumb {
+    padding-top: 30px;
+  }
+
+  .docViewCardItem {
+    max-height: 30%;
+    max-width: 100%;
+    display: inline-block;
+    margin-bottom: .1px;
+  }
+
+  .docDetailsCard {
+    padding-top: 20px;
+  }
+
+  .sectionDetails {
+    padding: 0px;
+  }
+
+  .sectionButtons {
+    text-align: right;
+    padding: 0px 20px;
+  }
+
+  .sectionDocUserItem {
+    min-width: 40%;
+    padding-bottom: 15px;
+    padding-left: 5px;
+  }
+
+  .sectionNav {
+    line-height: 1;
+  }
+
+  .discussionAuthorImg {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    float: left;
+  }
+
+  .discussionAuthor {
+    float: left;
+    margin-left: 10px;
+  }
+
+  .discussionAuthorDetailsDiv {
+    width: 100%;
+    overflow: auto;
+  }
+
+  .authorName {
+    margin-bottom: 0px;
+  }
+
+  .discussionCreated {
+    font-size: 11px;
+  }
+  .discussionItems {
+   max-height: 50vw;
+   overflow-y:scroll;
+   padding: 20px 0px 30px 20px;
+  }
+
+
+  .discussionComment {
+    text-align: left;
+  }
+
+  .discussionItemDiv {
+    text-align: left;
+  }
+
+  .fieldCols {
+    padding-bottom: 10px !important;
+  }
+
+  .fieldCols span {
+    font-size: 11px !important;
+  }
+
+  .fieldCols p {
+    font-size: 12px !important;
+  }
+
+  .sectionFooter {
+    padding: 0px 20px 20px !important;
+    overflow: auto;
+  }
+
+  .ms-Dropdown-title {
+    border: none;
+  }
+
+  .ms-BasePicker-text {
+    border: none;
+    border-bottom: 1px solid #c4c4cd;
+  }
+
+  .disabled {
+    pointer-events: none;
+  }
+
+  .btnRow {
+    padding-top: 10px;
+    text-align: right;
+    padding-right: 15px;
+  }
+
+  .btnApprove {
+    background: none;
+  }
+
+  .btnSendBack {
+    background: none;
+  }
+
+  .btnReject {
+    background: none;
+  }
+
+  .approvalHistoryLabel {
+    padding-left: 5px;
+  }
+
+  .OFPeoplePicker label {
+    font-size: 12px !important;
+  }
+}

@@ -1,0 +1,46 @@
+.sectionLeft {
+    background: #041e50;
+    color: #fff;
+    padding: 20px;
+}
+
+.labelHeader {
+    line-height: 1;
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #c4c4cd;
+}
+
+.labelContent {
+    line-height: 1;
+    font-size: 25px;
+}
+
+.sectionDocumentThumb {
+    margin-top: 70px;
+}
+
+.docViewCardItem {
+    max-height: 30%;
+    max-width: 100%;
+    display: inline-block;
+}
+
+.row.sectionDetails {
+    padding: 30px 20px;
+}
+
+.row.sectionButtons {
+    padding: 0 20px;
+}
+
+.sectionDocCardItem {
+    float: left;
+    min-width: 40%;
+}
+
+.ms-TextField-fieldGroup {
+    border: none;
+    border-bottom: 1px solid #c4c4cd;
+}
+
